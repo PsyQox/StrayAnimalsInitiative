@@ -20,8 +20,8 @@ tbl_user.hasMany(tbl_comment)
 tbl_comment.belongsTo(tbl_user)
 
 module.exports = {
-    conn: sequelize,
     tbl_user,
     tbl_post,
-    tbl_comment
+    tbl_comment,
+    conn: sequelize
 }
